@@ -1,0 +1,268 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #8e77a4;
+  color: #000;
+}
+
+.dashboard-container p {
+  font-size: 2rem;
+}
+
+.metrics-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8a2be2;
+  border: #8a2be2 solid 1px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 80%;
+  height: 30%;
+  align-items: center;
+}
+
+.metrics-container .metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.chart-container {
+  background-color: yellow;
+  width: 100%;
+  color: antiquewhite;
+}
+
+/* Product management */
+.main-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 1rem;
+  width: 100%;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: #8e77a4; /* Light background color */
+}
+
+.add-product {
+  background-color: #8e77a4;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.table-item {
+  background-color: #8a2be2;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  min-height: 60vh;
+}
+
+.table-item button {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; /* Add padding for spacing */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for input boxes */
+.form-class input {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.form-class button {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+}
+
+/* order-management-container */
+.heading {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.order-management-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  align-items: center;
+  width: 100%;
+  background-color: #8e77a4;
+  min-height: 100vh;
+}
+
+.order-table {
+  width: 80%;
+  margin-top: 1.5rem;
+  border: 1px solid #8a2be2;
+  padding: 2rem;
+  background-color: #8a2be2;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.order-table button {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  min-height: 40%;
+}
+
+.order-detail button {
+  background-color: rgb(21, 167, 167);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.calendar-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8e77a4;
+  padding: 2rem;
+}
+
+.calendar-card {
+  width: 70%;
+  height: 20%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #8a2be2;
+  background-color: #8a2be2;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.calendar-date {
+  width: 70%;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calendar-details {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.order-due-calendar {
+  background-color: rgb(50, 99, 125);
+  width: 30%;
+  height: 15%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.order-due-calendar button {
+  border-radius: 5px;
+  background-color: aqua;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .add-product,
+  .table-item {
+    width: 90%;
+  }
+
+  .calendar-card,
+  .order-detail {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dashboard-container p {
+    font-size: 1.5rem;
+  }
+
+  .metrics-container {
+    width: 90%;
+  }
+
+  .main-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-product,
+  .table-item {
+    width: 90%;
+  }
+
+  .form-class {
+    padding: 1rem;
+  }
+
+  .calendar-card,
+  .order-detail {
+    width: 90%;
+  }
+}
